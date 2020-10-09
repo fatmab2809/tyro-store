@@ -2,10 +2,12 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
+    text-align:center;
 }
 .navbar{
     background-color: #AAA5FF; 
+    padding-bottom:0px;
 }
 .navbar-light .navbar-nav .nav-link{
     color: #312e5a;
@@ -16,19 +18,26 @@ body{
 .nav-link{
     margin-right:1em;
 }
-.navbar-light .navbar-nav .nav-link:after {
-    content: "";
+.navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+.nav-link::after {
+    content: " ";
     position: absolute;
     background-color:black;
     height: 2px;
     width: 0%;
     transform: translateX(-50%);
-    left: 50%;
+    left: 40%;
     bottom: 0;
     transition: .35s ease;
 }
-.navbar-light .navbar-nav .nav-link:hover:after {
-    width: 100%;
+.nav-link:hover::after {
+    width: 70%;
+}
+.current .nav-link{
+    border-bottom: 3px solid black;
 }
 .food, .piggybank, .payment{
     margin-top:5em;
@@ -78,4 +87,8 @@ img{
 }
 a:hover{
     text-decoration: none;
+}
+.copyright{
+    font-weight:200;
+    margin-top:3%;
 }

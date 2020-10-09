@@ -19,6 +19,27 @@ body{
 .nav-link{
     margin-right:1em;
 }
+.navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+.nav-link::after {
+    content: " ";
+    position: absolute;
+    background-color:black;
+    height: 2px;
+    width: 0%;
+    transform: translateX(-50%);
+    left: 40%;
+    bottom: 0;
+    transition: .35s ease;
+}
+.nav-link:hover::after {
+    width: 70%;
+}
+.current .nav-link{
+    border-bottom: 3px solid black;
+}
 .hero{
     background-color: #AAA5FF;
 	background-size: cover;
@@ -52,6 +73,9 @@ body{
     margin: auto;
     width: 50%;
 }
+.text-center p{
+    font-weight:200;
+}
 .submit a{
     text-decoration:none;
     font-weight:500;
@@ -63,4 +87,9 @@ body{
 }
 a:hover{
     text-decoration: none;
+}
+.copyright{
+    text-align: center;
+    font-weight:200;
+    margin-top:3%;
 }
