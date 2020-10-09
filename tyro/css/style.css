@@ -16,6 +16,20 @@ body{
 .nav-link{
     margin-right:1em;
 }
+.navbar-light .navbar-nav .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color:black;
+    height: 2px;
+    width: 0%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    transition: .35s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover:after {
+    width: 100%;
+}
 .food, .piggybank, .payment{
     margin-top:5em;
     /* margin-left:1em; */

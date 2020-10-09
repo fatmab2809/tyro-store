@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap');
 
 body{
     font-family: 'Montserrat', sans-serif;
     /* margin-bottom: 1em;; */
+    color:#29285a;
 }
 .navbar{
     background-color: #AAA5FF; 
@@ -21,8 +23,44 @@ body{
     background-color: #AAA5FF;
 	background-size: cover;
     background-attachment: fixed;
-    height:300px;
+    height:350px;
 }
 .hero h1{
 	 padding:10%;	 
+}
+.text-left h2{
+    margin-left:40%;
+    font-weight:900;
+    font-size:2em;
+    margin-bottom:0px;
+}
+.text>h2{
+    font-weight: 900;
+    margin-left: 20%;
+    font-size:5em;
+    padding-top:0px;
+    margin-top:0px;
+}
+.text-center{
+    color:black;
+    /* background-color: rgb(104, 136, 73); */
+    /* padding-top:5%;
+    padding-bottom:5%; */
+    border-right:4px solid black;
+    border-left:4px solid black;
+    padding: 5% 0% 5% 1%;
+    margin: auto;
+    width: 50%;
+}
+.submit a{
+    text-decoration:none;
+    font-weight:500;
+    background-color:  #AAA5FF;
+    color:black;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px 100px 100px 100px;
+}
+a:hover{
+    text-decoration: none;
 }
