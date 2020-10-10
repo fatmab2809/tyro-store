@@ -53,7 +53,18 @@ li{
     text-align:left;
     margin-bottom:1px;
 }
-
+.col-md-3{
+    transition: transform .2s;
+}
+.col-md-3:hover{
+    transform: scale(1.1);
+}
+.col-md-3:hover h3{
+    font-weight:900;
+}
+.col-md-3:hover hr{
+    background:black;
+}
 @media screen and (max-width:550px){
     .plus,.basic, .premium, .exclusive{
         /* display:inline-block; */
@@ -69,6 +80,9 @@ li{
     padding-top:2em;
     border:2px solid #b3b1b1;
     border-radius: 2em;
+}
+.divborder:hover{
+    border:2px solid black;
 }
 .divborder>p{
     position: relative;
