@@ -39,6 +39,46 @@ body{
 .current .nav-link{
     border-bottom: 3px solid black;
 }
+li{
+    text-align:left;
+}
+.basic, .premium, .exclusive{
+    margin-top:3em;
+}
+.plus{
+    margin-top:0.48em;
+}
+.plus>p{
+    text-align:left;
+}
+.divborder{
+    height:22em;
+    margin-top:1em;
+    padding-top:2em;
+    border:2px solid black;
+    border-radius: 2em;
+}
+hr{
+    width:100%;
+    position: relative; 
+    top: 20px; 
+    border: none; 
+    height: 2px; 
+    background: black; 
+    margin-bottom: 50px; 
+}
+.faq{
+    
+    margin-top:3em;
+}
+.faq a{
+    text-decoration:none;
+    background-color:  #AAA5FF;
+    color:black;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px 100px 100px 100px;
+}
 .copyright{
     font-weight:200;
     margin-top:3%;
