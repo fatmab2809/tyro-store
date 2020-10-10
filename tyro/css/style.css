@@ -39,6 +39,14 @@ body{
 .current .nav-link{
     border-bottom: 3px solid black;
 }
+@media screen and (max-width:768px){
+    .current .nav-link{
+        border-bottom: none;
+    }
+    .nav-link:hover::after {
+        content:unset;
+    }
+}
 .food, .piggybank, .payment{
     margin-top:5em;
     /* margin-left:1em; */
