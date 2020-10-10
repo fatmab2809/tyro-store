@@ -51,6 +51,16 @@ li{
 .plus>p{
     text-align:left;
 }
+
+@media screen and (max-width:550px){
+    .plus,.basic, .premium, .exclusive{
+        /* display:inline-block; */
+        padding: 5% 0% 5% 1%;
+        margin: auto;
+        width: 60%;
+
+    }
+}
 .divborder{
     height:22em;
     margin-top:1em;
@@ -58,14 +68,48 @@ li{
     border:2px solid black;
     border-radius: 2em;
 }
+.divborder>p{
+    position: relative;
+    top:150px;
+}
+@media screen and (min-width:1000px),screen and (min-width:530px), screen and (max-width:290px){
+    .divborder>p{
+        position: relative;
+        top:140px;
+    }
+}
+.hidden{
+    display:none;
+}
 hr{
     width:100%;
-    position: relative; 
-    top: 20px; 
+    /* position: relative; 
+    top: 10em;  */
     border: none; 
     height: 2px; 
     background: black; 
-    margin-bottom: 50px; 
+    margin-top:10em;
+}
+
+@media screen and (max-width:770px) and (min-width:430px){
+    hr{
+        margin-top:9em;
+    }
+    .basic hr{ 
+        margin-top:7.8em;
+    }
+}
+
+@media screen and (max-width:300px){
+    hr{
+        margin-top:9em;
+    }
+    .hidden{
+        display:block;
+        margin-top:1em;
+        height:0.4px;
+        width:60%;
+    }
 }
 .faq{
     
