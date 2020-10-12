@@ -3,7 +3,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1em;
-    text-align:center;
+    /* text-align:center; */
 }
 .navbar{
     background-color: #AAA5FF; 
