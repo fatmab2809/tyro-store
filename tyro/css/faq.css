@@ -3,7 +3,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1em;
-    /* text-align:center; */
+    text-align:center;
 }
 .navbar{
     background-color: #AAA5FF; 
@@ -50,4 +50,20 @@ body{
 .navbar-brand span{
     font-weight:bold;
     font-size:50%;
+}
+.contact{
+    
+    margin-top:3em;
+}
+.contact a{
+    text-decoration:none;
+    background-color:  #AAA5FF;
+    color:black;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px 100px 100px 100px;
+}
+.copyright{
+    font-weight:200;
+    margin-top:3%;
 }
