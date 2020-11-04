@@ -8,6 +8,7 @@ body{
 .navbar{
     background-color: #AAA5FF; 
     background-size: cover;
+    text-align:center;
 } 
 .navbar-light .navbar-nav .nav-link{
     color: #312e5a;
@@ -22,22 +23,24 @@ body{
     float: left;
     position: relative;
   }
-.nav-link::after {
-    content: " ";
-    position: absolute;
-    background-color:black;
-    height: 2px;
-    width: 0%;
-    transform: translateX(-50%);
-    left: 40%;
-    bottom: 0;
-    transition: .35s ease;
-}
-.nav-link:hover::after {
-    width: 70%;
-}
-.current .nav-link{
-    border-bottom: 3px solid black;
+  @media screen and (min-width:600px){
+    .nav-link::after {
+        content: " ";
+        position: absolute;
+        background-color:black;
+        height: 2px;
+        width: 0%;
+        transform: translateX(-50%);
+        left: 40%;
+        bottom: 0;
+        transition: .35s ease;
+    }
+    .nav-link:hover::after {
+        width: 70%;
+    }
+    .current .nav-link{
+        border-bottom: 3px solid black;
+    }
 }
 .navbar-brand{
     font-weight:900;

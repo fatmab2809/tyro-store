@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap');
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -22,23 +22,26 @@ body{
     float: left;
     position: relative;
   }
-.nav-link::after {
-    content: " ";
-    position: absolute;
-    background-color:black;
-    height: 2px;
-    width: 0%;
-    transform: translateX(-50%);
-    left: 40%;
-    bottom: 0;
-    transition: .35s ease;
+@media screen and (min-width:600px){
+    .nav-link::after {
+        content: " ";
+        position: absolute;
+        background-color:black;
+        height: 2px;
+        width: 0%;
+        transform: translateX(-50%);
+        left: 40%;
+        bottom: 0;
+        transition: .35s ease;
+    }
+    .nav-link:hover::after {
+        width: 70%;
+    }
+    .current .nav-link{
+        border-bottom: 3px solid black;
+    }
 }
-.nav-link:hover::after {
-    width: 70%;
-}
-.current .nav-link{
-    border-bottom: 3px solid black;
-}
+
 .navbar-brand{
     font-weight:900;
     font-size:185%;
