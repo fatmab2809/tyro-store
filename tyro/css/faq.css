@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap');
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -50,6 +50,33 @@ body{
 .navbar-brand span{
     font-weight:bold;
     font-size:50%;
+}
+.container .cols{
+   
+}
+.title{
+    font-weight: 700;
+    margin-top: 2%;
+}
+h6{
+    font-weight: 600;
+    margin-top: 6%;
+}
+.cols{
+    text-align: left;
+    /* margin-top: 3%; */
+    /* line-height:24px; */
+}
+@media screen and (min-width:720px){
+    .col-md-6{
+        padding-left: 5%;
+        padding-right:5%;
+        margin-top:15px;
+    }
+    .col2{
+        border-left:3px solid black;
+       /* padding: 5% 0% 5% 1%; */
+    }
 }
 .contact{
     
