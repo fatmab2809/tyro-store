@@ -96,6 +96,10 @@ body{
     border: none;
     border-radius: 100px 100px 100px 100px;
 }
+.submit a:hover{
+    transition: background-color 0.5s ease-out;
+    background-color: #867ff7;
+}
 a:hover{
     text-decoration: none;
 }

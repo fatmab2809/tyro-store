@@ -184,6 +184,10 @@ hr{
     border: none;
     border-radius: 100px 100px 100px 100px;
 }
+.faq a:hover{
+    transition: background-color 0.5s ease-out;
+    background-color: #867ff7;
+}
 .copyright{
     font-weight:200;
     margin-top:3%;
